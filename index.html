@@ -1,10 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="da">
     <head>
         <meta charset="UTF-8">
         <title>MKaagaard</title>
         <link href="stylesheet.css" rel="stylesheet" 
-        type="text/css">
+        type="text/css">  
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Parisienne&display=swap" rel="stylesheet">        
     </head>
     <body>
         <header>
@@ -15,9 +19,9 @@
                 </label>
                 <img src="Billeder/mkaagaardlogo.png" alt="mkaagaard">
                 <ul>
-                    <li><a href="lyserød">Om mig</a></li>
-                    <li><a href="portfolie">Portfolie</a></li>
-                    <li><a href="kontakt">Kontakt</a></li>
+                    <li><a href="#om-mig">Om mig</a></li>
+                    <li><a href="#portfolie">Portfolie</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
                   </ul>
             </nav>
         </header>
@@ -25,39 +29,103 @@
 
         <div class="gridcontainer">
             <div class="michelle">
-                <section>
-                <h1>Michelle Kaagaard Kristensen</h1>
-                <p>Multimediedesign studerende med fokus på 
+                <img class="kasse1" src="Billeder/skøjterredigeret.png" alt="kasse1">
+                <article id="fokus">
+                <h1>Michelle Kaagaard <br>
+                Kristensen</h1>
+                <p>Multimediedesign studerende med fokus på<br> 
                     fotografering, redigering og animation.</p>
-                </section>
-                <section>
-                    <img class="kasse1" src="Billeder/skøjterredigeret.png" alt="kasse1">
-                    <img class="skøjter" src="Billeder/skøjter.png" alt="skøjter">
-            </section>
+                </article>
+                  
             </div>
             <div class="lyserød">
-                <h3>Om mig</h3></div>
+                <h3 id="om-mig"> Om mig</h3></div>
             <div class="ommig">
-                <img id="mig" src="Billeder/mig.png" alt="Michelle">
+                <img class="mig" src="Billeder/mig.png" alt="Michelle">
+                <article class="tekst">
+                    <h4>Lidt om mig</h4>
+                    Heeeej! Mit navn er Michelle Kågård Kristensen, og så jeg er 27 år gammel. <br>
+                    Jeg studerer til multimediedesigner, på UCL Erhvervsakademi og Professionshøjskole. <br>
+                    Jeg er evig fynbo, og bor i øjeblikket i Odense. <br>
+                    Jeg elsker at være kreativ, på alle måde jeg kan finde på. <br>
+                    Jeg har altid haft en kærlighed for animation og photoshop, <br>
+                    og drømt om en fremtid indenfor emnet. <br>
+                    At studerer til multimediedesigner, har dog vist mig nogle nye ting <br>
+                    som jeg ikke vidste jeg var lige så glad for. 
+                    Såsom fotografering og redigering af billederne. <br>
+                    Jeg er vild med det, og ser mig selv i branchen i min fremtid. Jeg synes det hele er fedt, <br>
+                    at lære om indstillingerne på kameraet, hvordan man laver en opsætning, <br>
+                    hvor meget lys påvirker resultatet og hvor meget man kan gøre efter det er taget. 
+
+                </article>
             </div>
             <div class="lyseblå">
-                <h3>Portfolie</h3></div>
+                <h3 id="portfolie" >Portfolie</h3></div>
             <div class="portfolie">
-                <img id="et" src="Billeder/1.png" alt="et">
-                <img id="to" src="Billeder/2.png" alt="to">
-                <img id="tre" src="Billeder/3.png" alt="tre">
-                <img id="fire" src="Billeder/4.png" alt="fire">
-                <img id="fem" src="Billeder/5.png" alt="fem">
-                <img id="seks" src="Billeder/6.png" alt="seks">
-                <img id="syv" src="Billeder/7.png" alt="syv">
-                <img id="otte" src="Billeder/8.png" alt="otte">
+                <div class="image-container">
+                    <img src="Billeder/1.png" alt="bagbilled1" class="base-image">
+                    <img src="Billeder/billed1.png" alt="billed1" class="overlay-image">
+                    <div class="text-overlay">
+                        <p class="beskriv">dette er det første billed</p>
+                    </div>
+                </div>
+                <div class="image-container">
+                    <img src="Billeder/2.png" alt="bagbilled2" class="base-image">
+                    <img src="Billeder/billed2.png" alt="billed2" class="overlay-image">
+                    <div class="text-overlay">
+                        <p class="beskriv">dette er det andet billed</p>
+                </div>
+                </div>
+                <div class="image-container">
+                    <img src="Billeder/3.png" alt="bagbilled3" class="base-image">
+                    <img src="Billeder/billed3.png" alt="billed3" class="overlay-image">
+                    <div class="text-overlay">
+                        <p class="beskriv">dette er det tredje billed</p>
+                </div>
+                </div>
+                <div class="image-container">
+                    <img src="Billeder/4.png" alt="bagbilled4" class="base-image">
+                    <img src="Billeder/billed4.png" alt="billed4" class="overlay-image">
+                    <div class="text-overlay">
+                        <p class="beskriv">dette er det fjerde billed</p>
+                </div>
+                </div>
+                <div class="image-container">
+                    <img src="Billeder/5.png" alt="bagbilled5" class="base-image">
+                    <img src="Billeder/billed5.png" alt="billed5" class="overlay-image">
+                    <div class="text-overlay">
+                        <p class="beskriv">dette er det femte billed</p>
+                </div>
+                </div>
+                <div class="image-container">
+                    <img src="Billeder/6.png" alt="bagbilled6" class="base-image">
+                    <img src="Billeder/billed6.png" alt="billed6" class="overlay-image">
+                    <div class="text-overlay">
+                        <p class="beskriv">dette er det sjette billed</p>
+                </div>
+                </div>
+                <div class="image-container">
+                    <img src="Billeder/7.png" alt="bagbilled7" class="base-image">
+                    <img src="Billeder/billed7.png" alt="billed7" class="overlay-image">
+                    <div class="text-overlay">
+                        <p class="beskriv">dette er det syvende billed</p>
+                </div>
+                </div>
+                <div class="image-container">
+                    <img src="Billeder/8.png" alt="bagbilled8" class="base-image">
+                    <img src="Billeder/billed8.png" alt="billed8" class="overlay-image">
+                    <div class="text-overlay">
+                        <p class="beskriv">dette er det ottende billed</p>
+                </div>
+                </div>
             </div>
         </div>
+        
        
         <footer>
-            <p>Michelle Kågård Kristensen<br>
-                +45 61453529<br>
-                <a href="mkkr54667@edu.ucl.dk">mkkr54667@edu.ucl.dk</a></p>
+            <p>Michelle Kågård Kristensen</p>
+               <p> +45 61453529</p>
+                <p><a href="mkkr54667@edu.ucl.dk">mkkr54667@edu.ucl.dk</a></p>
         </footer>
     </body>
 </html>
