@@ -1,12 +1,11 @@
 *{
     padding: 0;
-    margin: 0;
     text-decoration: none;
     list-style: none;
     box-sizing:border-box;
 }
 body{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Indie Flower', cursive, Arial, Helvetica, sans-serif;
 }
 nav{
     background:#bfe5f9;
@@ -45,6 +44,7 @@ a:hover{
 #check{
     display: none;
 }
+
 @media (max-width: 952px){
     nav ul li a{
         font-size: 16px;
@@ -82,10 +82,188 @@ a:hover{
     }
 }
 
-body{
-    max-width: auto;
+
+.michelle{
+    display: inline-flex;
+   background-color: #ffffff;
+   height: auto;
+   width:auto;
+   align-items: center;
 }
-@media only screen and (max-width: 400px) {
+#fokus h1{
+    color: #707070;
+    font-size: 60px;
+    font-family: 'Parisienne', cursive, Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+#fokus p{
+    color: #707070;
+    font-size: 40px;
+    font-family: 'Indie Flower', cursive, Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.kasse1{
+    margin: 40px;
+    height: 521px;
+    width: 769px;
+}
+
+
+.lyserød{
+    background-color: #FBE2F2;
+    height: 150px;
+    width:auto;
+    color:#707070;
+    font-size: 30px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+h3{
+    color:#707070;
+    font-size: 30px;
+    text-align: center;
+}
+
+.ommig{
+    display:flex;
+    background-color: #ffffff;
+    height: auto;
+    width:auto;
+    align-items: center;
+}
+.mig{
+    padding: 50px;
+    width: auto;
+    height: auto;
+}
+.tekst{
+    color: #707070;
+    font-family: 'Indie Flower', cursive, Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    text-align: center;
+    float: right;
+    
+}
+
+.lyseblå{
+    background-color: #bfe5f9;
+    height: 150px;
+    width: auto;
+    color:#707070;
+    font-size: 30px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.portfolie{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #ffffff;
+    height: auto;
+    width:auto;
+}
+.image-container {
+    position: relative;
+    margin: 55px;
+  }
+  
+  .base-image {
+    width: 300px;
+    height: auto;
+  }
+  
+  .overlay-image {
+    position: absolute;
+    top: 35px;
+    left: 35px;
+    width: auto;
+    height: auto;
+  }
+  
+  .text-overlay {
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 15px;
+    left: 70px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+  }
+
+  .text-overlay:hover{
+    opacity: 1;
+  }
+
+  .beskriv{
+    font-size: 20px;
+    font-family: 'Indie Flower', cursive, Arial, Helvetica, sans-serif;
+    position: absolute;
+    color: #707070;
+    text-align: center;
+    padding: 55px;
+  }
+
+
+.kontakt{
+    display:flex;
+    position: relative;
+    background-color: #ffffff;
+    height: auto;
+    width:100%;
+}
+.kontakt img{
+    height: auto;
+    width: 100%;
+    margin: 50px;
+}
+.kontakt-tekst {
+    position: absolute;
+    top: 40%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .kontakt-tekst p{
+    font-size: 30px;
+    color: #707070;
+  }
+  @media (max-width: 900px) {
+    .kontakt-tekst{
+        top: 70%;
+        left: 50%;
+    }
+    .kontakt-tekst p{
+      font-size: 10px;
+      transform: translate(-50%, -70%);
+    }
+  }
+
+footer{
+    display: flex;
+    font-size: 40px;
+    background-color: #FBE2F2;
+    color: #707070;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+footer p{
+    margin: 50px;
+}
+
+
+  
+
+@media (max-width: 400px) {
     .gridcontainer{
         display: grid;
     }
@@ -101,92 +279,29 @@ body{
     }
 }
 
-.michelle{
-   background-color: #ffffff;
-   height: 600px;
-   width:auto;
-}
-h1{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+@media (max-width: 900px) {
+     .mig{
+        width: 246px;
+        height: 288px;
 
-}
-.kasse1{
-    position: relative;
-    float: right;
-}
-.skøjter{
-    position: absolute;
-    float: right;
-}
+     }
+     .tekst{
+        font-size: 10px;
+        
+     }
+     p{
+        font-size: 15px;
+     }
+     .kasse1{
+        width: 385px;
+        height: 260px;
 
-
-.lyserød{
-    background-color: #FBE2F2;
-    height: 150px;
-    width:auto;
-    color:#707070;
-    font-size: 30px;
-    text-align: center;
+     }
+     #fokus h1{
+        font-size: 30px;
+        
+     }
+     #fokus p{
+        font-size: 15px;
+     }
 }
-h3{
-    color:#707070;
-    font-size: 30px;
-    text-align: center;
-}
-
-.ommig{
-    background-color: #ffffff;
-    height: 800px;
-    width:auto;
-}
-
-.lyseblå{
-    background-color: #bfe5f9;
-    height: 150px;
-    width: auto;
-    color:#707070;
-    font-size: 30px;
-    text-align: center;
-}
-
-.portfolie{
-    background-color: #ffffff;
-    height: auto;
-    width:auto;
-}
-#et{
-    margin: 55px;
-}
-#et:hover{
-    background-color: #707070;
-}
-#to{
-    margin: 55px;
-}
-#tre{
-    margin: 55px;
-}
-#fire{
-    margin: 55px;
-}
-#fem{
-    margin: 55px;
-}
-#seks{
-    margin: 55px;
-}
-#syv{
-    margin: 55px;
-}
-#otte{
-    margin: 55px;
-}
-
-footer {
-    text-align: center;
-    font-size: 30px;
-    padding: 50px;
-    background-color: #FBE2F2;
-    color: #707070;
-    vertical-align: auto;
-  }
